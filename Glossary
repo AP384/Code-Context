@@ -51,7 +51,7 @@ Interpreter = A JS(Javascript) engine is an interpreter or compiler of JS code i
 Reads the js code line by line and converts to binary code and provides the result. 
 Cons:  Execution time for repeated code will be longer.:"
 
-Bytecode = 
+Bytecode = Bytecode is computer object code that an interpreter converts into binary machine code so it can be read by a computer's hardware processor. The interpreter is typically implemented as a virtual machine (VM) that translates the bytecode for the target platform.
 
 Compiler = The compiler is software that converts a program written in a high-level language (Source Language) to a low-level language (Object/Target/Machine Language/0, 1’s). 
 Reads the entire code in the js file and converts to another language and provides the result.
