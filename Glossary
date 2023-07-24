@@ -1,0 +1,112 @@
+Terminology & Meaning
+-----------------------------------------------------------------------------------------------------------------
+Front end = Client side
+Back end = Server side
+--------------------------------------------------------------------------------------------
+Node.JS = Developers use Node.js to create server-side web applications, and it is perfect for data-intensive applications since it uses an asynchronous, event-driven model.
+ = NodeJS is basically used as an open-source and cross platform JavaScript runtime environment
+ = It runs web applications outside the client’s browser
+" = When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.
+This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs."
+ = Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.
+ = In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
+------------------------------------------------------------------------------------------------------------------------------
+I/O primitives = Input/Output (The "primitives" just means that basic I/O operations such as "read bytes" and "write bytes" to/from network connections or files are provided as asynchronous operations and higher-level operations need to be built on top of those (again in an asynchronous way, to keep the benefits).
+
+Asynchronous event driven model = Event-driven architecture is often referred to as “asynchronous” communication. This means that the sender and recipient don't have to wait for each other to move onto their next task. Systems are not dependent on that one message.
+
+Blocking / blocking call = Further code execution is blocked by current code execution ie sequential  - Your program is frozen until a particular function call returns. Only then can we go ahead.
+"Non blocking call = There’s a function call, but it doesn’t block the program. The program continues execution.
+These only work when theres a non javascript requirement where the JS code is not directly involved"
+
+Callbacks = A callback function helps tell Node, you come back here.
+
+Event listeners = An event listener is a procedure in JavaScript that waits for an event to occur
+
+Web server = A web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client requests made over the World Wide Web. The main job of a web server is to display website content through storing, processing and delivering webpages to users
+
+Frameworks = JavaScript frameworks are a collection of libraries containing code written in JavaScript, making life a lot easier for software developers. Each JavaScript framework offers pre-built codes for different areas and different purposes in software development, saving time for the developer.
+ = Developers created JavaScript frameworks to make life easier for themselves. They allow programmers to use the most up-to-date JavaScript features and tools without having to go through the arduous task of coding them from scratch by themselves.
+ = These frameworks are templates that provide a foundation for software applications. It collects shared resources like libraries, reference documents, images and more and packages them for developers to use. With these frameworks, programmers can add better functionality and more to a web page and website.
+
+Application = 3 parts to an application - front end, back end and backend database (relational or non-relational databases.)
+ = Whenever a client requests something from the client side of the application what happens is, the request is first sent to the server and then in that server some processing or calculations goes on for the validation of the client side request and after doing all such validation a response is sent to the client side
+
+Runtime environment = A runtime environment loads applications and has them run on a platform. All the resources necessary for running independently of the operating system are available on this platform. That's why, for example, playing Flash videos is only possible with the right runtime environment - in this case the 
+
+Engine = JavaScript is a scripting language and is not directly understood by computer but the browsers have inbuilt JavaScript engine which help them to understand and interpret JavaScript codes. These engines help to convert our JavaScript program into computer-understandable language.
+These engines for the most part live and operate inside web browsers like Chrome, Firefox, Safari etc. However with the release of NodeJs in 2011 we now can use the V8 engine outside of the web browsers and directly on our machines."
+
+JavaScript source code / text = Code that programmer writes
+
+Parser = To parse is to break up a sentence or group of words into separate components, including the definition of each part's function or form
+Parsing the source code as plain text to a data structure called abstract syntax tree (AST)"
+ = A parser is a program that is part of the compiler, and parsing is part of the compiling process. Parsing happens during the analysis stage of compilation. In parsing, code is taken from the preprocessor, broken into smaller pieces and analyzed so other software can understand it.
+
+Abstract Syntax Tree = Abstract syntax trees are data structures widely used in compilers, due to their property of representing the structure of program code. An AST is usually the result of the syntax analysis phase of a compiler.
+ASTs present the source code in a structured way but they also play a critical role in the semantic analysis where the compiler validates the correctness and proper usage of the program and the language elements. Later on, the ASTs are used to generate the actual bytecode or machine code."
+
+Interpreter = A JS(Javascript) engine is an interpreter or compiler of JS code into machine code. JS being a higher level dynamic language has no way to directly interact with our machines lower level logic. Not all JS engines are built equally, there are the traditional compilers and more modern ones that utilize just-in-time compilation to bytecode. V8 and most modern JS engines are just-in-time compilers; where the engines differ is in the implementation or pipe-line of the interpreter and optimized compilers. More on optimized compilers later.
+
+Reads the js code line by line and converts to binary code and provides the result. 
+Cons:  Execution time for repeated code will be longer.:"
+
+Bytecode = 
+
+Compiler = The compiler is software that converts a program written in a high-level language (Source Language) to a low-level language (Object/Target/Machine Language/0, 1’s). 
+Reads the entire code in the js file and converts to another language and provides the result.
+Pros:  Less execution time is taken for the repeated code execution."
+
+Method = A method is a set of code which is referred to by name and can be called (invoked) at any point in a program simply by utilizing the method's name. Think of a method as a subprogram that acts on data and may, or may not, return a value. Each method has its own name.
+JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition."
+
+Profiler = CPU profiling helps you get a better understanding of which parts of your code take up the most CPU time, and how your code is executed and optimized by the V8 JavaScript engine.
+Node.js CPU profiling in WebStorm is based on the V8 built-in CPU profiler, which provides information about the execution of your code and the behavior of the JavaScript engine itself including garbage collection cycles, compilation and re-compilation, and code optimization.
+The profiler takes snapshots at certain intervals that are called ticks. Measurements are made not only for the work of your code, but also for the activities performed by the engine itself, such as compilation, calls of system libraries, optimization, and garbage collection."
+
+Optimizing Code = The code optimization in the synthesis phase is a program transformation technique, which tries to improve the intermediate code by making it consume fewer resources (i.e. CPU, Memory) so that faster-running machine code will result.
+
+Programmes = the code that is stored on your computer that can complete a certain task. Generally, task-specific programs are called applications (or apps). For example, you are probably reading this post using a web browser application. Other common applications include email clients, word processors, and games.
+Non volatile memory is a better place to store programs"
+
+Programmes - compiled = Many programs are written in a compiled language The end result is a text file of code that is compiled into binary form (ones and zeros) in order to run on the computer. The text file speaks directly to your computer. While they’re typically fast, they are also fixed compared to interpreted programs. That has positives and negatives: You have more control over things like memory management, but you’re platform dependent and, if you have to change something in your code, it typically takes longer to build and test.
+
+Programmes - interpreted = There is another kind of program called interpreted. They require an additional program to take your program instructions and translate that to code for your computer. Compared with compiled languages, these types of programs are platform-independent (you just have to find a different interpreter, instead of writing a whole new program) and they typically take up less space. 
+
+CPU  = Ultimately, both kinds of programs (compiled /intepretive) are run and loaded into memory in binary form. Programs have to run in binary because your computer’s central processing unit (CPU) understands only binary instructions.
+
+Memory = computer having two types of memory: volatile and nonvolatile. Volatile memory is temporary and processes in real time. It’s faster, easily accessible, and increases the efficiency of your computer. However, it’s not permanent. When your computer turns off, this type of memory resets.
+Nonvolatile memory, on the other hand, is permanent unless deleted. While it’s slower to access, it can store more information. S"
+
+Processes = Once a program has been loaded into memory in binary form, your executing program needs resources from the operating system and memory to run. Without these resources, you can’t use the program. When a program is loaded into memory along with all the resources it needs to operate, it is called a process.
+You might have multiple instances of a single program. In that situation, each instance of that running program is a process. Each process has a separate memory address space. That separate memory address is helpful because it means that a process runs independently and is isolated from other processes. However, processes cannot directly access shared data in other processes. Switching from one process to another requires some amount of time (relatively speaking) for saving and loading registers, memory maps, and other resources.
+Having independent processes matters for users because it means one process won’t corrupt or wreak havoc on other processes. If a single process has a problem, you can close that program and keep using your computer. Practically, that means you can end a malfunctioning program and keep working with minimal disruptions."
+
+Operating System (OS) = The operating system manages the work of allocating resources to your programs automatically
+
+Resources = Register. Think of a register as a holding pen that contains data that may be needed by a process like instructions, storage addresses, or other data.
+Program counter. Also known as an instruction pointer, the program counter plays an organizational role. It keeps track of where a computer is in its program sequence.
+Stack. A stack is a data structure that stores information about the active subroutines of a computer program. It is used as scratch space for the process. It is distinguished from dynamically allocated memory for the process that is known as the “heap.”"
+
+Instance = An instance is a single copy of the software running on a single physical or virtual server. If you run two copies of the software on the same physical or virtual server, that counts as two instances. When you run two copies of the software on two different physical or virtual servers, that also counts as two instances. Most disaster‑recovery (DR) deployments require two instances per location, even if one instance is “passive” (running but not receiving traffic).
+
+Threads = A thread is the unit of execution within a process. A process can have anywhere from one thread to many. When a process starts, it receives an assignment of memory and other computing resources. Each thread in the process shares that memory and resources. With single-threaded processes, the process contains one thread.
+In multi-threaded processes, the process contains more than one thread, and the process is accomplishing a number of things at the same time (to be more accurate, we should say “virtually” the same time—you can read more about that in the section below on concurrency).
+Earlier, we talked about the stack and the heap, the two kinds of memory available to a thread or process. Distinguishing between these kinds of memory matters because each thread will have its own stack. However, all the threads in a process will share the heap.
+Some people call threads lightweight processes because they have their own stack but can access shared data. Since threads share the same address space as the process and other threads within the process, it is easy to communicate between the threads. The disadvantage is that one malfunctioning thread in a process can impact the viability of the process itself."
+
+Threads and Processes Summary = (1) The program starts out as a text file of programming code.
+(2) The program is compiled or interpreted into binary form.
+(3) The program is loaded into memory.
+(4) The program becomes one or more running processes. Processes are typically independent of one another.
+(5) Threads exist as the subset of a process.
+(6) Threads can communicate with each other more easily than processes can.
+(7) Threads are more vulnerable to problems caused by other threads in the same process."
+"Threads and Processes Comparisons = PROCESSES	THREADS
+Processes are heavyweight operations.	Threads are lighter-weight operations.
+Each process has its own memory space.	Threads use the memory of the process they belong to.
+Inter-process communication is slow as processes have different memory addresses.	Inter-thread communication can be faster than inter-process communication because threads of the same process share memory with the process they belong to.
+Context switching between processes is more expensive.	Context switching between threads of the same process is less expensive.
+Processes don’t share memory with other processes.	Threads share memory with other threads of the same process."
+
+Concurrency and Parallelism = On a system with multiple processors or CPU cores (as is common with modern processors), multiple processes or threads can be executed in parallel. On a single processor, though, it is not possible to have processes or threads truly executing at the same time. In this case, the CPU is shared among running processes or threads using a process scheduling algorithm that divides the CPU’s time and yields the illusion of parallel execution. The time given to each task is called a “time slice.” The switching back and forth between tasks happens so fast it is usually not perceptible. The terms, “parallelism” (genuine simultaneous execution) and “concurrency” (interleaving of processes in time to give the appearance of simultaneous execution), distinguish between the two types of real or approximate simultaneous operation
